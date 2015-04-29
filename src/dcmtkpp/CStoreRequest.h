@@ -15,12 +15,13 @@
 #include <dcmtk/ofstd/oftypes.h>
 
 #include "dcmtkpp/Request.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief C-STORE-RQ message.
-class CStoreRequest: public Request
+class DCMTKPP_EXPORT CStoreRequest: public Request
 {
 public:
     /**

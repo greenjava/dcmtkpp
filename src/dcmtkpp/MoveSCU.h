@@ -17,12 +17,13 @@
 
 #include "dcmtkpp/SCU.h"
 #include "dcmtkpp/StoreSCP.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief SCU for C-MOVE services.
-class MoveSCU: public SCU
+class DCMTKPP_EXPORT MoveSCU: public SCU
 {
 public:
     /// @brief Callback called when a response is received.

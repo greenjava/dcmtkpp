@@ -16,12 +16,13 @@
 #include <dcmtk/dcmdata/dcvr.h>
 
 #include "dcmtkpp/Request.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief C-MOVE-RQ message.
-class CMoveRequest: public Request
+class DCMTKPP_EXPORT CMoveRequest: public Request
 {
 public:
     /**

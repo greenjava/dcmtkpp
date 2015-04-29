@@ -16,12 +16,13 @@
 
 #include "dcmtkpp/Message.h"
 #include "dcmtkpp/Response.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief C-GET-RSP message.
-class CGetResponse: public Response
+class DCMTKPP_EXPORT CGetResponse: public Response
 {
 public:
     /**

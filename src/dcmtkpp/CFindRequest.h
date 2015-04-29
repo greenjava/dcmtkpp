@@ -15,12 +15,13 @@
 #include <dcmtk/ofstd/oftypes.h>
 
 #include "dcmtkpp/Request.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief C-FIND-RQ message.
-class CFindRequest: public Request
+class DCMTKPP_EXPORT CFindRequest: public Request
 {
 public:
     /**

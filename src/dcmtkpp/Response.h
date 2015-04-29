@@ -13,12 +13,13 @@
 #include <dcmtk/ofstd/oftypes.h>
 
 #include "dcmtkpp/Message.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief Base class for all DIMSE response messages.
-class Response: public Message
+class DCMTKPP_EXPORT Response: public Message
 {
 public:
     /// @brief Create a response with given message id and status;

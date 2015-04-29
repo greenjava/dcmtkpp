@@ -13,12 +13,13 @@
 #include <dcmtk/ofstd/oftypes.h>
 
 #include "dcmtkpp/Message.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief Base class for all DIMSE request messages.
-class Request: public Message
+class DCMTKPP_EXPORT Request: public Message
 {
 public:
     /// @brief Create a request with given Message ID.

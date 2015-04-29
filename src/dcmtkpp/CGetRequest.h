@@ -16,12 +16,13 @@
 #include <dcmtk/dcmdata/dcvr.h>
 
 #include "dcmtkpp/Request.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief C-GET-RQ message.
-class CGetRequest: public Request
+class DCMTKPP_EXPORT CGetRequest: public Request
 {
 public:
     /**

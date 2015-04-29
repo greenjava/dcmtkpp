@@ -16,8 +16,9 @@
 #include <dcmtk/dcmdata/dcdeftag.h>
 #include <dcmtk/ofstd/oftypes.h>
 
-#include <dcmtkpp/ElementAccessor.h>
-#include <dcmtkpp/ElementTraits.h>
+#include "dcmtkpp/ElementAccessor.h"
+#include "dcmtkpp/ElementTraits.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
@@ -54,7 +55,7 @@ namespace dcmtkpp
 /**
  * @brief Base class for all DIMSE messages.
  */
-class Message
+class DCMTKPP_EXPORT Message
 {
 public:
     /// @brief Create a message with an empty command set and an empty data set.

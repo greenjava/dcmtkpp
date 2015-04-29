@@ -9,16 +9,18 @@
 #ifndef _1b2f876e_1ad2_464d_9423_28181320aed0
 #define _1b2f876e_1ad2_464d_9423_28181320aed0
 
-#include "SCU.h"
 
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/dcmdata/dcdatset.h>
+
+#include "dcmtkpp/SCU.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief SCU for C-Store services.
-class StoreSCU: public SCU
+class DCMTKPP_EXPORT StoreSCU: public SCU
 {
 public:
     /// @brief Destructor.

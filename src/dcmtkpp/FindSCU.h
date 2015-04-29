@@ -15,12 +15,13 @@
 
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/dcmdata/dcdatset.h>
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief SCU for C-FIND services.
-class FindSCU: public SCU
+class DCMTKPP_EXPORT FindSCU: public SCU
 {
 public:
     /// @brief Callback called when a response is received.

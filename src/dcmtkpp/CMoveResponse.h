@@ -16,12 +16,13 @@
 
 #include "dcmtkpp/Message.h"
 #include "dcmtkpp/Response.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief C-MOVE-RSP message.
-class CMoveResponse: public Response
+class DCMTKPP_EXPORT CMoveResponse: public Response
 {
 public:
     /**

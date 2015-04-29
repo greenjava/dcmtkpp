@@ -15,12 +15,13 @@
 #include <dcmtk/ofstd/oftypes.h>
 
 #include "dcmtkpp/Request.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief C-ECHO-RQ message.
-class CEchoRequest: public Request
+class DCMTKPP_EXPORT CEchoRequest: public Request
 {
 public:
     /**

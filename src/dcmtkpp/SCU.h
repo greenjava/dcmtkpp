@@ -12,12 +12,13 @@
 #include <string>
 
 #include "dcmtkpp/ServiceRole.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief Base class for all Service Class Users.
-class SCU: public ServiceRole
+class DCMTKPP_EXPORT SCU: public ServiceRole
 {
 public:
     SCU();

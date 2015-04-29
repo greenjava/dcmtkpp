@@ -18,6 +18,7 @@
 #include <dcmtk/dcmnet/assoc.h>
 
 #include "dcmtkpp/Network.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
@@ -37,7 +38,7 @@ enum class UserIdentityType
  * 
  * No member can be set while the object is associated.
  */
-class Association
+class DCMTKPP_EXPORT Association
 {
 public:
     /// @brief Create a default, un-associated, association.

@@ -19,12 +19,13 @@
 #include "dcmtkpp/Association.h"
 #include "dcmtkpp/Message.h"
 #include "dcmtkpp/Network.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief Base class for all Service Class Users and Providers.
-class ServiceRole
+class DCMTKPP_EXPORT ServiceRole
 {
 public:
     /// @brief Progress callback, following the semantics of DCMTK.

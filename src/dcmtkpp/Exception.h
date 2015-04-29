@@ -14,12 +14,13 @@
 
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/ofstd/ofcond.h>
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief Base class for dcmtkpp exceptions.
-class Exception: public std::exception
+class DCMTKPP_EXPORT Exception: public std::exception
 {
 public: 
     /** 

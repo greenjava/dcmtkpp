@@ -16,11 +16,12 @@
 
 #include "dcmtkpp/CStoreRequest.h"
 #include "dcmtkpp/SCP.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
-class StoreSCP: public SCP
+class DCMTKPP_EXPORT StoreSCP: public SCP
 {
 public:
     /// @brief Callback called when a response is received.

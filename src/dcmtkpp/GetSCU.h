@@ -19,12 +19,13 @@
 #include "dcmtkpp/CGetResponse.h"
 #include "dcmtkpp/CStoreRequest.h"
 #include "dcmtkpp/StoreSCP.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief SCU for C-GET services.
-class GetSCU: public SCU
+class DCMTKPP_EXPORT GetSCU: public SCU
 {
 public:
     /// @brief Callback called when a response is received.

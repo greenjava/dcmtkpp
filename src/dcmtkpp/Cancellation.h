@@ -15,12 +15,13 @@
 #include <dcmtk/ofstd/oftypes.h>
 
 #include "dcmtkpp/Message.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief Base class for cancellation messages.
-class Cancellation: public Message
+class DCMTKPP_EXPORT Cancellation: public Message
 {
 public:
     /// @brief Create a response with given message id being responded to.

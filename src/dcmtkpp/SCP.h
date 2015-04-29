@@ -11,12 +11,13 @@
 
 #include "dcmtkpp/CEchoRequest.h"
 #include "dcmtkpp/ServiceRole.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief Base class for all Service Class Providers.
-class SCP: public ServiceRole
+class DCMTKPP_EXPORT SCP: public ServiceRole
 {
 public:
     SCP();

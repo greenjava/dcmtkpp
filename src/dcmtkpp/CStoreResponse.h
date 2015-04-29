@@ -15,12 +15,13 @@
 #include <dcmtk/ofstd/oftypes.h>
 
 #include "dcmtkpp/Response.h"
+#include "dcmtkpp_export.h"
 
 namespace dcmtkpp
 {
 
 /// @brief C-STORE-RSP message.
-class CStoreResponse: public Response
+class DCMTKPP_EXPORT CStoreResponse: public Response
 {
 public:
     /**

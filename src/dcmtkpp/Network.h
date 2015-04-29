@@ -12,6 +12,8 @@
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/dcmnet/assoc.h>
 
+#include "dcmtkpp_export.h"
+
 namespace dcmtkpp
 {
 
@@ -20,7 +22,7 @@ namespace dcmtkpp
  * 
  * No member can be set while the network is initialized.
  */
-class Network
+class DCMTKPP_EXPORT Network
 {
 public:
     /// @brief Create a default, un-initialized, network.
