@@ -7,13 +7,15 @@
  ************************************************************************/
 
 #include "dcmtkpp/ElementAccessor.h"
+#include "dcmtkpp/ElementAccessor.txx"
 
 namespace dcmtkpp
 {
 
 #define DEFINE_ELEMENT_ACCESSOR(vr, getter, setter) \
 template<> ElementAccessor<vr>::GetterType const ElementAccessor<vr>::element_get = getter<vr>; \
-template<> ElementAccessor<vr>::SetterType const ElementAccessor<vr>::element_set = setter<vr>;
+template<> ElementAccessor<vr>::SetterType const ElementAccessor<vr>::element_set = setter<vr>; \
+template struct ElementAccessor<vr>;
 
 DEFINE_ELEMENT_ACCESSOR(EVR_AE, get_string, set_string)
 DEFINE_ELEMENT_ACCESSOR(EVR_AS, get_string, set_string)

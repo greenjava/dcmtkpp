@@ -16,6 +16,8 @@
 #include <dcmtk/dcmdata/dcelem.h>
 #include <dcmtk/dcmdata/dcvr.h>
 
+#include "dcmtkpp_export.h"
+
 namespace dcmtkpp
 {
 
@@ -36,7 +38,7 @@ struct ElementTraits;
 #define DECLARE_ELEMENT_TRAITS(vr, value_type, dcmtk_value_type) \
 /** @brief Traits for generic data access to values of DcmElement. */ \
 template<> \
-struct ElementTraits<vr> \
+struct DCMTKPP_EXPORT ElementTraits<vr> \
 { \
     /** @brief C++ type of the VR. */ \
     typedef value_type ValueType; \
