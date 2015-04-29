@@ -6,13 +6,13 @@
  * for details.
  ************************************************************************/
 
-#include "SCP.h"
 
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/dcmnet/dimse.h>
 
 #include "dcmtkpp/CEchoRequest.h"
 #include "dcmtkpp/CEchoResponse.h"
+#include "dcmtkpp/SCP.h"
 #include "dcmtkpp/ServiceRole.h"
 
 namespace dcmtkpp

@@ -6,7 +6,6 @@
  * for details.
  ************************************************************************/
 
-#include "dcmtkpp/Cancellation.h"
 
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/dcmdata/dcdeftag.h>
@@ -14,6 +13,7 @@
 #include <dcmtk/dcmnet/dimse.h>
 #include <dcmtk/ofstd/oftypes.h>
 
+#include "dcmtkpp/Cancellation.h"
 #include "dcmtkpp/Message.h"
 
 namespace dcmtkpp

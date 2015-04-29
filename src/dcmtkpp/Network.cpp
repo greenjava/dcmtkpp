@@ -6,13 +6,13 @@
  * for details.
  ************************************************************************/
 
-#include "dcmtkpp/Network.h"
 
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/dcmnet/assoc.h>
 #include <dcmtk/dcmnet/cond.h>
 
 #include "dcmtkpp/Exception.h"
+#include "dcmtkpp/Network.h"
 
 namespace dcmtkpp
 {

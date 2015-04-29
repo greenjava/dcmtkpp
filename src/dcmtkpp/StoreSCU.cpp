@@ -6,7 +6,6 @@
  * for details.
  ************************************************************************/
 
-#include "StoreSCU.h"
 
 #include <algorithm>
 #include <sstream>
@@ -22,6 +21,7 @@
 #include "dcmtkpp/CStoreResponse.h"
 #include "dcmtkpp/ElementAccessor.h"
 #include "dcmtkpp/Exception.h"
+#include "dcmtkpp/StoreSCU.h"
 
 namespace dcmtkpp
 {

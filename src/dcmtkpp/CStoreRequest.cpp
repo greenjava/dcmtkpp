@@ -6,7 +6,6 @@
  * for details.
  ************************************************************************/
 
-#include "CStoreRequest.h"
 
 #include <string>
 
@@ -15,6 +14,7 @@
 #include <dcmtk/dcmnet/dimse.h>
 #include <dcmtk/ofstd/oftypes.h>
 
+#include "dcmtkpp/CStoreRequest.h"
 #include "dcmtkpp/ElementAccessor.h"
 #include "dcmtkpp/Exception.h"
 #include "dcmtkpp/Request.h"

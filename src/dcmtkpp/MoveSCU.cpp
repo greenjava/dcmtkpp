@@ -6,7 +6,6 @@
  * for details.
  ************************************************************************/
 
-#include "dcmtkpp/MoveSCU.h"
 
 #include <vector>
 
@@ -19,6 +18,7 @@
 #include "dcmtkpp/Exception.h"
 #include "dcmtkpp/Message.h"
 #include "dcmtkpp/StoreSCP.h"
+#include "dcmtkpp/MoveSCU.h"
 
 namespace dcmtkpp
 {

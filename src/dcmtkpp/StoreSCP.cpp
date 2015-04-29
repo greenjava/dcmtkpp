@@ -6,7 +6,6 @@
  * for details.
  ************************************************************************/
 
-#include "dcmtkpp/StoreSCP.h"
 
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/dcmdata/dcdatset.h>
@@ -15,6 +14,7 @@
 
 #include "dcmtkpp/CStoreRequest.h"
 #include "dcmtkpp/CStoreResponse.h"
+#include "dcmtkpp/StoreSCP.h"
 
 namespace dcmtkpp
 {

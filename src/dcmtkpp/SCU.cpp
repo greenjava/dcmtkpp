@@ -6,11 +6,8 @@
  * for details.
  ************************************************************************/
 
-#include "dcmtkpp/SCU.h"
 
 #include <string>
-
-#include <unistd.h>
 
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/dcmdata/dcdatset.h>
@@ -21,6 +18,7 @@
 #include "dcmtkpp/CEchoRequest.h"
 #include "dcmtkpp/CEchoResponse.h"
 #include "dcmtkpp/Message.h"
+#include "dcmtkpp/SCU.h"
 
 namespace dcmtkpp
 {

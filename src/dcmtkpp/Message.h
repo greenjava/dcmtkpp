@@ -24,12 +24,12 @@ namespace dcmtkpp
 
 #define DCMTKPP_MESSAGE_MANDATORY_FIELD_MACRO(name, tag, vr) \
     /** @brief Return the tag element of the command set. */ \
-    typename ElementTraits<vr>::ValueType get_##name() const \
+    ElementTraits<vr>::ValueType get_##name() const \
     { \
         return ElementAccessor<vr>::get(this->_command_set, tag); \
     } \
     /** @brief Set the tag element of the command set. */ \
-    void set_##name(typename ElementTraits<vr>::ValueType const & value) \
+    void set_##name(ElementTraits<vr>::ValueType const & value) \
     { \
         return ElementAccessor<vr>::set(this->_command_set, tag, value); \
     }

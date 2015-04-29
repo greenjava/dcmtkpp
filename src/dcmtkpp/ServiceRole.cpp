@@ -6,9 +6,6 @@
  * for details.
  ************************************************************************/
 
-#include "ServiceRole.h"
-
-#include <unistd.h>
 
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/dcmdata/dcdatset.h>
@@ -22,6 +19,7 @@
 
 #include "dcmtkpp/ElementAccessor.h"
 #include "dcmtkpp/Exception.h"
+#include "dcmtkpp/ServiceRole.h"
 
 namespace dcmtkpp
 {
@@ -123,8 +121,8 @@ ServiceRole
     this->_send(
         const_cast<DcmDataset*>(&message.get_command_set()),
         presentation_context, EXS_LittleEndianImplicit, 
-        DUL_COMMANDPDV, NULL, NULL);
-    if(message.get_data_set() != NULL && 
+        DUL_COMMANDPDV, nullptr, nullptr);
+    if (message.get_data_set() != nullptr &&
        !const_cast<DcmDataset*>(message.get_data_set())->isEmpty())
     {
         // FIXME: transfer syntax
@@ -450,6 +448,7 @@ ServiceRole::_receive_dataset(
                 case EXS_LittleEndianImplicit:
                 case EXS_LittleEndianExplicit:
                 case EXS_BigEndianExplicit:
+#if OFFIS_DCMTK_VERSION_NUMBER < 361
                 case EXS_JPEGProcess1TransferSyntax:
                 case EXS_JPEGProcess2_4TransferSyntax:
                 case EXS_JPEGProcess3_5TransferSyntax:
@@ -468,6 +467,26 @@ ServiceRole::_receive_dataset(
                 case EXS_JPEGProcess28TransferSyntax:
                 case EXS_JPEGProcess29TransferSyntax:
                 case EXS_JPEGProcess14SV1TransferSyntax:
+#else
+                case EXS_JPEGProcess1:
+                case EXS_JPEGProcess2_4:
+                case EXS_JPEGProcess3_5:
+                case EXS_JPEGProcess6_8:
+                case EXS_JPEGProcess7_9:
+                case EXS_JPEGProcess10_12:
+                case EXS_JPEGProcess11_13:
+                case EXS_JPEGProcess14:
+                case EXS_JPEGProcess15:
+                case EXS_JPEGProcess16_18:
+                case EXS_JPEGProcess17_19:
+                case EXS_JPEGProcess20_22:
+                case EXS_JPEGProcess21_23:
+                case EXS_JPEGProcess24_26:
+                case EXS_JPEGProcess25_27:
+                case EXS_JPEGProcess28:
+                case EXS_JPEGProcess29:
+                case EXS_JPEGProcess14SV1:
+#endif
                 case EXS_RLELossless:
                 case EXS_JPEGLSLossless:
                 case EXS_JPEGLSLossy:

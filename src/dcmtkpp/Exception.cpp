@@ -6,10 +6,10 @@
  * for details.
  ************************************************************************/
 
-#include "dcmtkpp/Exception.h"
 
 #include <string>
 
+#include "dcmtkpp/Exception.h"
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/ofstd/ofcond.h>
 
@@ -44,10 +44,9 @@ Exception
     {
         return this->_message.c_str();
     }
-    else if(this->_source == Source::Condition)
-    {
-        return this->_condition.text();
-    }
+
+    assert(this->_source == Source::Condition);
+    return this->_condition.text();
 }
 
 Exception::Source

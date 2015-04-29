@@ -79,10 +79,10 @@ protected:
     /// @brief Send a DIMSE message.
     void _send(
         Message const & message, std::string const & abstract_syntax,
-        ProgressCallback callback=NULL, void* callback_data=NULL) const;
+        ProgressCallback callback = nullptr, void* callback_data = nullptr) const;
     
     /// @brief Receive a generic DIMSE message.
-    Message _receive(ProgressCallback callback=NULL, void* callback_data=NULL) const;
+    Message _receive(ProgressCallback callback = nullptr, void* callback_data = nullptr) const;
     
     /**
      * @brief Receive a DIMSE message of specific type.
@@ -90,7 +90,7 @@ protected:
      * Throw an exception if the received message is not of the requested type.
      */
     template<typename TMessage>
-    TMessage _receive(ProgressCallback callback=NULL, void* callback_data=NULL) const;
+    TMessage _receive(ProgressCallback callback = nullptr, void* callback_data = nullptr) const;
 
 private:
     OFCondition _send(
@@ -108,6 +108,6 @@ private:
 
 }
 
-#include "ServiceRole.txx"
+#include "dcmtkpp/ServiceRole.txx"
 
 #endif // _fa7d372a_dd27_4a1e_9b29_be9d5fbe602a

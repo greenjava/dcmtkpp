@@ -6,7 +6,6 @@
  * for details.
  ************************************************************************/
 
-#include "Message.h"
 
 #include <string>
 
@@ -19,6 +18,7 @@
 
 #include "dcmtkpp/ElementAccessor.h"
 #include "dcmtkpp/Exception.h"
+#include "dcmtkpp/Message.h"
 
 namespace dcmtkpp
 {

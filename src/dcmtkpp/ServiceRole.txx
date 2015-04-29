@@ -9,7 +9,6 @@
 #ifndef _8ac39caa_b7b1_44a8_82fc_e8e3de18b2f8
 #define _8ac39caa_b7b1_44a8_82fc_e8e3de18b2f8
 
-#include "ServiceRole.h"
 
 #include <functional>
 #include <utility>
@@ -21,6 +20,7 @@
 #include "dcmtkpp/Association.h"
 #include "dcmtkpp/Message.h"
 #include "dcmtkpp/Network.h"
+#include "dcmtkpp/ServiceRole.h"
 
 namespace dcmtkpp
 {

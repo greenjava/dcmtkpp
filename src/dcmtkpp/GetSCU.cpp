@@ -6,7 +6,6 @@
  * for details.
  ************************************************************************/
 
-#include "dcmtkpp/GetSCU.h"
 
 #include <functional>
 #include <sstream>
@@ -20,6 +19,7 @@
 #include "dcmtkpp/CGetResponse.h"
 #include "dcmtkpp/CStoreRequest.h"
 #include "dcmtkpp/Exception.h"
+#include "dcmtkpp/GetSCU.h"
 
 namespace dcmtkpp
 {

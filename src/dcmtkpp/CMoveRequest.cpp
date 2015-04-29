@@ -6,7 +6,6 @@
  * for details.
  ************************************************************************/
 
-#include "CMoveRequest.h"
 
 #include <string>
 
@@ -15,6 +14,7 @@
 #include <dcmtk/dcmnet/dimse.h>
 #include <dcmtk/ofstd/oftypes.h>
 
+#include "dcmtkpp/CMoveRequest.h"
 #include "dcmtkpp/ElementAccessor.h"
 #include "dcmtkpp/Exception.h"
 #include "dcmtkpp/Request.h"

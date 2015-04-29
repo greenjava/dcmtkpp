@@ -50,6 +50,7 @@ struct ElementTraits<vr> \
     static SetterType const setter; \
 };
 
+
 DECLARE_ELEMENT_TRAITS(EVR_AE, std::string, OFString)
 DECLARE_ELEMENT_TRAITS(EVR_AS, std::string, OFString)
 //DECLARE_ELEMENT_TRAITS(EVR_AT

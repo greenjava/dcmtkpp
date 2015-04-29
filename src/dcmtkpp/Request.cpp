@@ -6,7 +6,6 @@
  * for details.
  ************************************************************************/
 
-#include "Request.h"
 
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/dcmdata/dcdatset.h>
@@ -16,6 +15,7 @@
 #include "dcmtkpp/ElementAccessor.h"
 #include "dcmtkpp/Exception.h"
 #include "dcmtkpp/Message.h"
+#include "dcmtkpp/Request.h"
 
 namespace dcmtkpp
 {

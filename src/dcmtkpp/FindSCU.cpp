@@ -6,7 +6,6 @@
  * for details.
  ************************************************************************/
 
-#include "dcmtkpp/FindSCU.h"
 
 #include <functional>
 #include <sstream>
@@ -19,6 +18,7 @@
 #include "dcmtkpp/Exception.h"
 #include "dcmtkpp/CFindRequest.h"
 #include "dcmtkpp/CFindResponse.h"
+#include "dcmtkpp/FindSCU.h"
 
 namespace dcmtkpp
 {

@@ -6,8 +6,9 @@
  * for details.
  ************************************************************************/
 
-#include "Association.h"
-
+#ifdef WIN32
+#include <Winsock2.h>
+#endif
 #include <sstream>
 #include <string>
 #include <utility>
@@ -17,6 +18,7 @@
 #include <dcmtk/dcmnet/assoc.h>
 #include <dcmtk/dcmnet/cond.h>
 
+#include "dcmtkpp/Association.h"
 #include "dcmtkpp/Exception.h"
 
 namespace dcmtkpp
