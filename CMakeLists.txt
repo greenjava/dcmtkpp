@@ -4,5 +4,14 @@ project("dcmtkpp")
 include(CTest)
 
 add_subdirectory("src")
-add_subdirectory("examples")
-add_subdirectory("tests")
+
+option(BUILD_EXAMPLES "Build dcmtkpp examples." OFF)
+option(BUILD_TESTING "Build dcmtkpp tests." OFF)
+
+if(BUILD_EXAMPLES)
+    add_subdirectory("examples")
+endif()
+
+if(BUILD_TESTING)
+    add_subdirectory("tests")
+endif()
